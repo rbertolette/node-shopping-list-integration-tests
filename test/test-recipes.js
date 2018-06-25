@@ -99,7 +99,7 @@ it("should add an recipe on POST", function() {
       expect(res.body.ingredients).to.be.an("array");
       expect(res.body.ingredients.length ).to.be.at.least(1);
       // solution included:
-      res.body.ingredients.should.include.members(newItem.ingredients);
+      expect(res.body.ingredients).should.include.members(newItem.ingredients);
     });
 });
 

@@ -65,7 +65,7 @@ router.put("/:id", (req, res) => {
     return res.status(400).send(message);
   }
   console.log(`Updating shopping list item \`${req.params.id}\``);
-  const updatedItem = ShoppingList.update({
+   const updatedItem= ShoppingList.update({
     id: req.params.id,
     name: req.body.name,
     checked: req.body.checked

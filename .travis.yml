@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: mh3uNVPYT3DozJWlblII1flEL5X7fiCLkFCO0gvftiEhPQykcfKwD5AsC36UAG5QxW7UcwQCmFtogrrBXsYjd7yEqouwyo8Msoyw6wDUc8+Y2yLKBEd2RIUnmGIy2nKNPbTl2Gv7+FelEZ5dVJge5qOZ6ud5Zslp58XsQHt7FiWURpfqdYG+HBWfNoerNVsnJ7xESBL9sHCNXyK2mpCZCSoBO58CmA/AYciIKgnKXvQ/IOXytSX5WQAqBxlkTfpYVmlE/vReBa/OSJQdxFdXH0yxpZxSe0Kp8w3gs1OqGc3jJ5bRj+zfjKXHc3VUjdG8MkUjk2J+24dJibBNgsUkjgtwsJcUvPVWYSvQcpBrTdpPkgeKK3ULbmKrqxQS/AadktbLhrQ4QIKHEh9K77pusIEo6CDnBf7/Rf7MHYXLdbPWUPhz5plAw/E/y7xqCyG1Qg29X4Guh0C89E+tWVC6mUi1E10QuJ2RoURueg6kkA6HPx3pROWxwFdkgQwCB9RLL88gruYrPVkaQfo5dF3j9p8Wzo+pi2LxIsMkxDRrX3/g+1tzn0jm4prCio1HOgZqNSopB7+6ey5yMeB8I8BAeLyJ4nADdfV63h5JjePD7rZ7f7EdY1ALnKrdpxZ9GvLlm5oxJfYrx1kZATA7ix1Jj6zzSWq42YmVTJ+xXt3/Oy0=
+  app: vast-chamber-20155
+  on:
+    repo: rbertolette/node-shopping-list-integration-tests
